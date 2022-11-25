@@ -17,12 +17,12 @@
                           </tr>
                         </thead>
                         <tbody>
-                          <tr>
+                          <tr *ngFor="let i of data">
                             
-                            <td>Mark</td>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
+                            <td>{{i.userId}}</td>
+                            <td>{{i.id}}</td>
+                            <td>{{i.title}}</td>
+                            <td>{{i.body}}</td>
                           </tr>
                         
                         </tbody>
